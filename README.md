@@ -1,4 +1,4 @@
-# utils [![Build Status](https://travis-ci.org/arunvelsriram/utils.svg?branch=master)](https://travis-ci.org/arunvelsriram/utils)
+# utils 
 
 Docker image with tools like curl, wget, ping, netcat, nslookup,host, dig, psql, mysql, swaks etc.
 
@@ -9,7 +9,7 @@ When using containers you might want to test the connectivity between the contai
 For example, to run a one-off container in Kubernetes:
 
 ```
-kubectl run --rm utils -it --generator=run-pod/v1 --image arunvelsriram/utils bash
+kubectl run --rm utils -it --generator=run-pod/v1 --image cosmopod/utils bash
 
 # You will be seeing a bash prompt
 $ psql -h hostname -U test -d test
@@ -23,8 +23,8 @@ $ exit
 ## General Usage
 
 ```
-$ docker pull arunvelsriram/utils
-$ docker run --rm -it arunvelsriram/utils bash
+$ docker pull cosmopod/utils
+$ docker run --rm -it cosmopod/utils bash
 
 # inside the container
 $ ping google.com
